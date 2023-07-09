@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="project.css">
+</head>
+<body>
+    <div class="project-card">
+        <h2>Music Recommendation System</h2>
+        <p>In this project, I developed a Music Recommendation System using the Spotify Dataset. The system utilizes the Spotipy library, which is a Python client for the Spotify Web API, to fetch data and query Spotify's catalog for songs.
+            The project involves several key steps:
+            <ol>
+            <li>Data Analysis and Visualization: I performed data analysis and visualization techniques on the Spotify Dataset. This helped me gain insights into the data and understand various aspects such as genre distribution, artist popularity, and track characteristics.</li>
+            
+            <li>Exploratory Data Analysis (EDA): Through EDA, I identified relevant features for the Recommendation System. This involved selecting attributes like song popularity, genre, artist, tempo, and danceability, which are crucial for personalized recommendations.</li>
+            
+            <li>Clustering Genres with K-Means: I applied the K-Means clustering algorithm to group genres into clusters based on their audio features. This allowed me to identify similarities between genres and understand how they are grouped based on numerical audio characteristics.</li>
+            
+            <li>Recommendation Algorithm: Using the selected features and clustering results, I implemented an advanced recommendation algorithm. This algorithm analyzes user preferences, similarities between songs, artists, and genres, and suggests personalized music recommendations accordingly.</li>
+        </ol>
+    </p>
+        </div>
+    <div class="project-card">
+        <h3>Recommendation Algorithm</h3>
+        <p>
+           <ul> 
+            <li>find_song(name, year): This function takes a song name and year as input and searches the Spotify catalog using the Spotipy library. It retrieves the relevant details of the song, such as explicitness, duration, popularity, and audio features (valence, acousticness, danceability, etc.).</li>
+            
+            <li>get_song_data(song, spotify_data): This function checks if the song data already exists in the Spotify data obtained earlier. If not, it calls the find_song function to fetch the missing song data from the Spotify catalog. The song data is then returned as a Pandas DataFrame.</li>
+            
+            <li>get_mean_vector(song_list, spotify_data): This function calculates the mean vector representation of the song list provided. It iterates over each song in the list, retrieves its song data using get_song_data, and extracts the relevant numerical features. The mean vector is calculated by taking the average of the song vectors.</li>
+            
+            <li>recommend_songs(song_list, spotify_data, n_songs): This function recommends a specified number of songs (n_songs) based on the given song list. It computes the cosine similarity distance between the mean vector of the given songs and all the songs in the Spotify dataset. The songs with the closest similarity distances are selected as recommendations. The function filters out songs that are already in the given song list and returns the recommended songs as a list of dictionaries containing metadata such as song name, year, and artists.</li></ul></p>
+    </div>
+</body>
+</html>

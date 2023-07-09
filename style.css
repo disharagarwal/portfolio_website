@@ -1,0 +1,183 @@
+/* Reset default styles */
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #eee;
+    color: #333;
+    padding: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Sections */
+  section {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    section {
+      margin-bottom: 20px;
+    }
+  }
+  #feedback-form {
+    max-width: 400px;
+    margin: 0;
+    background-color: #f7f7f7;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  #feedback-form input[type="text"],
+  #feedback-form input[type="email"],
+  #feedback-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  
+  #feedback-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #feedback-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  #feedback-form textarea {
+    height: 120px;
+  }
+  
+  .feedback-card {
+    background-color: #f7f7f7;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .feedback-card h3 {
+    margin-top: 0;
+  }
+  
+/* CSS code for project card section */
+.project-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  width: calc(75% - 20px);
+  padding: 20px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.project-card a:hover {
+  background-color: #2980b9;
+}
+
+/* CSS code for the home section */
+/* CSS code for the home section */
+.home-section {
+  display: flex;
+  align-items: center;
+}
+
+.left-section {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.right-section {
+  flex: 1 1 auto;
+}
+
+.left-section img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Adjust the max-height value as needed */
+}
